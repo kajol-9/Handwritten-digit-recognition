@@ -1,12 +1,12 @@
 # ✍️ Handwritten Digit Recognition using Neural Networks
 
-## 🧠 Problem Statement
+##  Problem Statement
 
 The challenge is to **accurately classify handwritten digits (0 to 9)** from grayscale images. These digits vary in shape and size due to different writing styles, making this a classic problem in computer vision and pattern recognition.
 
 ---
 
-## 💡 Solution Overview
+##  Solution Overview
 
 This project uses the **MNIST dataset** to train and evaluate a machine learning model that can recognize handwritten digits. A neural network is implemented using **TensorFlow and Keras** to perform **multi-class classification**.
 
@@ -40,7 +40,7 @@ To build and optimize a neural network model that can:
 
 ---
 
-## 🚀 Approach
+## Approach
 
 ### 1. **Data Loading and Preprocessing**
 - Loaded dataset using `keras.datasets.mnist`
@@ -74,7 +74,7 @@ To build and optimize a neural network model that can:
 
 ---
 
-## 📊 Results
+##  Results
 
 - **Initial Accuracy**: ~92.5%  
 - **Final Accuracy** (after adding hidden layer and more epochs): **~97.7%**
@@ -82,12 +82,18 @@ To build and optimize a neural network model that can:
 
 ---
 
-## 📌 Sample Confusion Matrix
+##  Sample Confusion Matrix
 
 > Diagonal dominance represents correct predictions  
 > Off-diagonal values represent misclassifications
 
 <img width="1039" height="711" alt="image" src="https://github.com/user-attachments/assets/18a78341-5038-4d0e-9488-e85a624dc231" />
+
+### **Flask Integration**
+- Created `app.py` to handle image upload and prediction
+- Frontend (`templates/index.html`) for user interaction
+- Users can upload any digit image; it's auto-resized and processed
+- Model prediction is displayed directly in the browser
 
 
 
@@ -102,6 +108,22 @@ To build and optimize a neural network model that can:
 
 ---
 
+
+## 🌐 Web Interface Demo
+
+### 🖼️ Upload Flow
+1. Visit the local web app
+2. Upload a handwritten digit image
+3. Get the predicted digit instantly
+
+**Interface Highlights:**
+- Clean UI with Bootstrap styling
+- Drag & drop or file selection supported
+- Fast TensorFlow model inference
+
+---
+
+
 ## ✅ Key Learnings
 
 - How to build and train a neural network with Keras
@@ -112,13 +134,6 @@ To build and optimize a neural network model that can:
 
 ---
 
-## 🏁 How to Run
-
-1. Clone this repository or open in Google Colab
-2. Upload your handwritten digit image (`28x28 PNG`)
-3. Run the full notebook and observe the predicted output
-
----
 
 
 
